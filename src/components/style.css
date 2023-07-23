@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --main: #4028f7;
+}
+
+
+.main1{
+    height: 60vh;
+    width: 100vw;
+}
+.content1{
+    /* border:1px solid black; */
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.available{
+    font-family: 'Montserrat', sans-serif;
+}
+.content1 .first,.second,.third,.fourth,.fifth{
+    height: 20%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.content1 .first h5{
+    margin-right: 200px;
+    font-weight: 900;
+}
+.content1 .fifth,.fourth{
+    height: 10%;
+}
+
+.content1 .first .img-circle{
+    height: 67px;
+    width: 67px;
+    border-radius: 100%;
+    background-color: var(--main);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1 .first{
+    justify-content: space-between;
+    align-items: end;
+}
+.content1 .second{
+    height: 23%;
+    overflow: hidden;
+}
+.second .hello-img{
+    height: 120%;
+}
+.third h1{
+    font-size: 80px;
+    margin-left: 10px;
+}
+.content1 .third{
+    height: 13%;
+}
+
+
+.fifth .btn{
+    background-color: var(--main);
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* -----------------About section */
+.main2{
+    height: 26vh;
+}
+.content2,.content3,.content4,.content5{
+    width: 50vw;
+    margin: auto;
+    padding:2rem;
+}
+.content2 h1,.content3 h1,.content4 h1,.content5 h1{
+    text-decoration: underline;
+    text-decoration-color: var(--main);
+}
+.content2 p{
+    font-size: 13px;
+}
+
+ /* --------Skills */
+ .main3{
+    height: auto;
+}
+
+.content3 .skills .skills-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+/* ----------Projects */
+.content4 .project .p-item{
+    margin: 20px 0;
+    padding: 5px;
+    box-shadow: 1px 1px 5px 5px rgb(244, 243, 243);
+    border-radius: 5px;
+    display: flex;
+}
+.p-item .data{
+    padding: 5px;
+    margin: auto;
+}
+.p-item .p-image{
+    height: 150px;
+    width: 350px;
+}
+.content4 .project .p-item p{
+    font-size: 12px;
+}
+.content4 .project .p-item .icon{
+    height: 20px;
+    width: 20px;
+}
+
+/* ----------Contact us */
+.content5 .contact-form{
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input[type="email"],.contact-form textarea{
+    margin: 15px auto;
+    padding: 5px;
+    outline: none;
+    width: 70%;
+}
+.contact-form button{
+    border: none;
+    background-color: var(--main);
+    color: white;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:auto;
+}
+
+.footer{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main);
+    color: white;
+    font-size: 50px;
+}
+.footer .icon{
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+@media (max-width: 900px){
+    .main1{
+        height: 50vh;
+    }
+
+    .content1{
+        margin:auto;
+        width: 87vw;
+        height: 50vh;
+        /* margin-top: 50px; */
+    }
+    .content1 .first h5{
+        margin-right: 0;
+    }
+    .content1 .second{
+        height: 15%;
+    }
+    .content1 .first,.second,.third,.fourth,.fifth{
+        /* border: 1px solid black; */
+        height: auto;
+    }
+    .content1 .first .img-circle{
+        height: 70px;
+        width: 70px;
+        margin-left: 10px;
+    }
+    .content1 .second .hello-img{
+        width:107%;
+        height: 110%;
+    }
+    .content1 .third h1{
+        font-size: 57px ;
+    }
+    .content1 .fourth{
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .content1 .fifth .btn{
+        font-size: 12px;
+    }
+
+    /* --------About */
+    .main2{
+        /* border:1px solid black; */
+        display: flex;
+        
+    }
+    .content2{
+        width: 100vw;
+        padding:2rem;
+    }
+
+    /* --------Skills */
+    
+    .content3{
+        width: 100vw;
+        margin: 80px 0;
+        margin-bottom: 0px ;
+    }
+
+    /* -----------Projects */
+    .content4{
+        width: 100vw;
+    }
+    .p-item{
+        flex-direction: column;
+    }
+    .p-item .p-image{
+        width: 100%;
+        height: 180px;
+    }
+
+    /* -----------Contact */
+    .content5{
+        width: 100vw;
+        
+    }
+    .content5 .contact-form{
+        width: 90vw;
+        padding: 0;
+    }
+    .contact-form input[type="email"],.contact-form textarea{
+        width: 100%;
+    }
+
+    .footer{
+        font-size: 30px;
+    }
+   
+}
+ @media (max-width:390px) {
+    .content1 .third h1{
+        font-size: 40px;
+    }
+    .content1 .first .img-circle{
+        height: 40px;
+        width: 40px;
+    }
+    .content1 .first h5{
+        font-size: 10px;
+    }
+    .content1 .first .my-img{
+        height: 30px;
+        width: 30px;
+    }
+    .content1 .fifth .btn{
+        font-size: 9px;
+    }
+
+    /* ---------About */
+    .content2 p{
+        font-size: 10px;
+    }
+
+    .content5 .contact-form input[type="email"],.contact-form textarea{
+        width: 90%;
+    }
+ }
